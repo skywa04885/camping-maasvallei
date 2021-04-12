@@ -6,7 +6,7 @@ const mainRoute = require ("./routes/main.route.js");
 
 const LISTEN_PORT = 8080;
 const LISTEN_ADDR = "0.0.0.0";
-const MONGODB_URI = "mongodb://localhost:27017/camping_maaszooi";
+const MONGODB_URI = "mongodb://localhost:27017/camping_maaszooi?authSource=admin";
 
 class Main {
 	/*********************************************************
