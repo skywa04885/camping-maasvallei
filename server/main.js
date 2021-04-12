@@ -47,7 +47,12 @@ class Main {
 }
 
 (async () => {
-	mongoose.connect (LISTEN_ADDR, { useNewUrlParser: true });
+	mongoose.connect (MONGODB_URI, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+		user: 'root',
+		pass: 'toor'
+	});
 
 	const main = new Main (LISTEN_PORT, LISTEN_ADDR);
 })();
